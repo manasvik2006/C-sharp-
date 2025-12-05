@@ -1,0 +1,36 @@
+using System;
+
+class student
+{
+    private int age;
+    public int Age
+    {
+        get
+        {
+            return age;
+        }
+        set
+        {
+            if (value > 0 && value < 60)
+            {
+                age = value;
+            }
+            else
+            {
+                Console.WriteLine("Invalid age");
+            }
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        student s1 = new student();
+        Console.WriteLine("Enter the age");
+        int a = Convert.ToInt32(Console.ReadLine());
+        s1.Age = a;
+        Console.WriteLine("The age is "+s1.Age);
+    }
+}
