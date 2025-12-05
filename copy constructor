@@ -1,0 +1,30 @@
+using System;
+
+class Std
+{
+    public string name;
+    public Std(string n)
+    {
+        name = n;
+    }
+    public Std(Std s)
+    {
+        name = s.name;
+    }
+    public void show()
+    { 
+        Console.WriteLine("Name " + name);
+    }
+    
+}
+
+class Prg
+{
+    static void Main()
+    {
+        Std s1 = new Std("Manasvi");
+        Std s2 = new Std(s1);
+        s2.show();
+    }
+}
+
