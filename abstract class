@@ -1,0 +1,22 @@
+using System;
+
+abstract class animal
+{
+    public abstract void makesound();
+}
+class dog : animal
+{
+    public override void makesound()
+    {
+        Console.WriteLine("Dog is barking");
+    }
+}
+
+class program
+{
+    static void Main()
+    {
+        dog d= new dog();
+        d.makesound();
+    }
+}
