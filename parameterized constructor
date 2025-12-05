@@ -1,0 +1,23 @@
+using System;
+
+class Std
+{
+    int usn;
+    float marks;
+    public Std(int x, float y)
+    {
+        usn = x;
+        marks = y;
+        Console.WriteLine("the usn is" + x);
+        Console.WriteLine("the mark is" + y);
+
+    }
+}
+
+class Prg
+{
+    static void Main()
+    {
+        Std s1 = new Std(33, 78.5F);
+    }
+}
