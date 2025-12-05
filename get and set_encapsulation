@@ -1,0 +1,28 @@
+using System;
+
+class student
+{
+    private string name;
+    public string Name
+    {
+        get
+        {
+            return name; 
+
+        }
+        set
+        {
+            name = value;
+        }
+    }
+}
+
+class program
+{
+    static void Main()
+    {
+        student s1=new student();
+        s1.Name = "Manasvi";
+        Console.WriteLine("Student Name:" + s1.Name);
+    }
+}
