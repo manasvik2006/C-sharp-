@@ -1,0 +1,21 @@
+using System;
+
+class myClass
+{
+    private int age;
+    public void showage()
+    {
+        Console.WriteLine("Enter the age");
+         int age = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Age is " + age);
+    }
+}
+
+class program
+{
+    static void Main()
+    {
+        myClass a = new myClass();
+        a.showage();
+    }
+}
