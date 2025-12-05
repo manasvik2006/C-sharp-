@@ -1,0 +1,22 @@
+using System;
+
+class car
+{
+    public string color;
+    public string model;
+    public void drive()
+    {
+        Console.WriteLine("I like to drive car");
+    }
+}
+
+class program
+{
+    static void Main()
+    {
+        car c = new car();
+        c.color = "blue";
+        Console.WriteLine("The color is " + c.color);
+        c.drive();
+    }
+}
